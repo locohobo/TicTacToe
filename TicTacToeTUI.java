@@ -102,7 +102,7 @@ public class TicTacToeTUI
            gameOver = true;
            gameWinner = "User 2";
          }
-         curPlayer = USER2;
+         curPlayer = USER1;
       }
       game.displayBoard();
     }
