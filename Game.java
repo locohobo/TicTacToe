@@ -104,8 +104,6 @@ public class Game
   {
     //TODO
 	
-	  while (cellNumber < 0 || cellNumber > 9)
-	  {
 		  int move = 0;
 		  int col = 0;
 				if (cellNumber < 4)
@@ -128,7 +126,7 @@ public class Game
 					}
 				
 					gameBoard[move][col] = piece; 
-	  }
+	 
 	
 	  
 	  
