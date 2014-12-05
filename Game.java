@@ -102,36 +102,37 @@ public class Game
     * */
   public void makeMove( int cellNumber, String piece)
   {
-    //TODO
-	
+
+	 try {
+		 //1, 2, 3, 6, 9
 		  int move = 0;
 		  int col = 0;
 				if (cellNumber < 4)
 		  			{
-					move = 3;
+					move = 0;
 					col = cellNumber-1;
 		  			}
 	  
 	  			else if (cellNumber > 3 & cellNumber < 7)
 	  			{
-	  				move = 2;
-	  				col = cellNumber-3;
+	  				move = 1;
+	  				col = cellNumber-4;
 	  			}
 	  				
 	  
 	  			else if (cellNumber > 6 && cellNumber < 10)
 					{
-	  				move = 1;
-					col = cellNumber-6;
+	  				move = 2;
+					col = cellNumber-7;
 					}
-				
+	  			
 					gameBoard[move][col] = piece; 
-	 
-	
-	  
-	  
-	
-  }
+	 }
+	 catch (Exception E)
+	 {
+		 System.out.println("That is not a valid number");
+	 }
+
   
   
   /*****************************************************
